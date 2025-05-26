@@ -141,3 +141,12 @@
         > type: Custom TCP > Port range: 5080 > 0.0.0.0/0 > Save rules
 33. Now paste the public ip address on the address bar +:5080 and your app will be launched.
 34. You can also do model training on /training route
+
+
+
+
+huzaifaahmedzaidi
+password
+godb+srv://huzaifaahmedzaidi:26JZRIuLrZrSIEdZ@cluster0.zlby1aj.mongodb.net/
+python -m pip install "pymongo[srv]"==3.6
+mongodb+srv://huzaifaahmedzaidi:passwordr0.yipsi0i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
