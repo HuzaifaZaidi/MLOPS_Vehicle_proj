@@ -102,3 +102,15 @@ class DataIngestion:
             return data_ingestion_artifact
         except Exception as e:
             raise MyException(e, sys) from e
+        
+
+# ------------------------ Summary Notes ------------------------
+
+# ✅ This class performs:
+#    1. Data fetching from MongoDB (via Proj1Data)
+#    2. Saving the raw data to feature store
+#    3. Splitting into train/test sets and saving them
+# ✅ initiate_data_ingestion() is the main method used by the pipeline.
+# ✅ All errors are logged and handled using custom exception MyException.
+# ✅ Output: DataIngestionArtifact containing train and test file paths.
+# ✅ Design promotes modularity and traceability for debugging/tracking.

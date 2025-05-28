@@ -22,3 +22,27 @@ class DataIngestionConfig:
     testing_file_path: str = os.path.join(data_ingestion_dir, DATA_INGESTION_INGESTED_DIR, TEST_FILE_NAME)
     train_test_split_ratio: float = DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO
     collection_name:str = DATA_INGESTION_COLLECTION_NAME
+
+
+    # -------------------- Summary Notes --------------------
+
+# ✅ TIMESTAMP is created at the start of the pipeline so all files have a unique time-based folder.
+
+# ✅ @dataclass is used to automatically create __init__ and other useful methods.
+#    It's great for storing settings and parameters without writing extra code.
+
+# ✅ TrainingPipelineConfig:
+#    - Holds overall pipeline info like name, base artifact directory, and timestamp.
+
+# ✅ training_pipeline_config:
+#    - This creates one object of TrainingPipelineConfig to use throughout the project.
+
+# ✅ DataIngestionConfig:
+#    - Defines all paths and settings needed for data ingestion.
+#    - data_ingestion_dir: base folder for all ingestion outputs.
+#    - feature_store_file_path: where the raw/full dataset will be saved as a file.
+#    - training_file_path & testing_file_path: locations for train/test split data.
+#    - train_test_split_ratio: how much data to use for training (e.g., 0.8 = 80%).
+#    - collection_name: name of the MongoDB collection to read data from.
+
+# ✅ This file sets up all configuration in one place so it's easy to manage paths, names, and other settings later.

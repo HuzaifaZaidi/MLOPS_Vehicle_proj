@@ -62,3 +62,14 @@ class MongoDBClient:
         except Exception as e:
             # Raise a custom exception with traceback details if connection fails
             raise MyException(e, sys)
+        
+
+
+# ----------------------- Summary Notes -----------------------
+
+# ✅ This file handles connecting to a MongoDB database securely using pymongo.
+# ✅ It ensures a single MongoDB connection is reused across the project.
+# ✅ The MongoDB URL is stored in an environment variable, accessed using os.getenv().
+# ✅ It uses a certificate (via certifi) to establish a secure connection (useful for MongoDB Atlas).
+# ✅ The connection is logged for success, and any failures are raised as custom exceptions.
+# ✅ After connection, we can use `self.database` to access any collection (like `self.database['my_collection']`).

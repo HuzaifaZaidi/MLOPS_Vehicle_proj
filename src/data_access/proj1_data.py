@@ -55,3 +55,16 @@ class Proj1Data:
 
         except Exception as e:
             raise MyException(e, sys)
+        
+
+# ------------------------ Summary Notes ------------------------
+
+# ✅ This class helps fetch a collection from MongoDB and convert it into a pandas DataFrame.
+# ✅ The __init__ method sets up the MongoDB client using a default or given database name.
+# ✅ The export_collection_as_dataframe method:
+#    - Fetches all data from the collection.
+#    - Converts it to a pandas DataFrame.
+#    - Removes "id" column if present.
+#    - Replaces "na" strings with actual NaN values.
+# ✅ This class is useful for reading data from MongoDB for further processing in ML pipelines or EDA.
+# ✅ All errors are handled with a custom exception for better debugging.
