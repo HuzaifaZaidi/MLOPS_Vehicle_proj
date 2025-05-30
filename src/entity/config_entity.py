@@ -76,6 +76,10 @@ class ModelPusherConfig:
     bucket_name: str = MODEL_BUCKET_NAME
     s3_model_key_path: str = MODEL_FILE_NAME
 
+@dataclass
+class VehiclePredictorConfig:
+    model_file_path: str = MODEL_FILE_NAME
+    model_bucket_name: str = MODEL_BUCKET_NAME
     # -------------------- Summary Notes --------------------
 
 # ✅ TIMESTAMP is created at the start of the pipeline so all files have a unique time-based folder.

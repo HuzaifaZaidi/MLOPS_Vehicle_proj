@@ -145,8 +145,3 @@
 
 
 
-huzaifaahmedzaidi
-password
-godb+srv://huzaifaahmedzaidi:26JZRIuLrZrSIEdZ@cluster0.zlby1aj.mongodb.net/
-python -m pip install "pymongo[srv]"==3.6
-mongodb+srv://huzaifaahmedzaidi:passwordr0.yipsi0i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
